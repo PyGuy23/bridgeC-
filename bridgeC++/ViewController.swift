@@ -8,10 +8,36 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let wrapperItem = bridgeAlertExample(title: "Test")
+        wrapperItem.setTitle("Just yet another bridge tutorial")
+        
+        print("Title \(wrapperItem.getTitle())")
+        
+        let wrapperItem2 = bridgeAlertExample(message:"hello C++ bridge")
+        wrapperItem2.setMessage("bla bla")
+        
+        print("Message \(wrapperItem2.getMessage())")
+        
+        let wrapperItem3 = bridgeAlertExample(action:"make C++ work with Swift")
+        wrapperItem3.setAction("made it work lol")
+        print("Action \(wrapperItem3.getAction())")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
